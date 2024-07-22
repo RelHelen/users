@@ -45,8 +45,8 @@ export default function App() {
   return ( 
   
     <div className = "container mx-auto max-w-6xl">   
-      { load && <p className="text-red-600"> Loading ....</p>}
-      { error && <p>При загрузки страницы возникла ошибка: {error}</p> } 
+      { load && <p className="text-green-600"> Loading ....</p>}
+      { error && <p className="bg-red-50 border border-red-500 text-red-900">При загрузки страницы возникла ошибка: {error}</p> } 
       {
         companies &&
         <Company 
